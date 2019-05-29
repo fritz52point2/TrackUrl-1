@@ -1,11 +1,8 @@
 #!/bin/bash
 
-#64-bit
-#xterm -e ./ngrok_64 http 80 & clear
+service apache2 restart
 
-#32-bit
-xterm -e ./ngrok http 80 & clear
-
+service apache2 start
 
 echo "            ______________________________________________________
             7      77  _  77  _  77     77  7  77  7  77  _  77  7
@@ -64,6 +61,6 @@ echo "         ______________________________________________________
            |  |  |  7  ||  |  ||     7|  7  ||  !  ||  7  ||     7
            !__!  !__!__!!__!__!!_____!!__!__!!_____!!__!__!!_____!
                                                                   " > /var/log/apache2/access.log
-xterm -e tail -f /var/log/apache2/access.log &
-clear
-exit
+#tail -f /var/log/apache2/access.log &
+#clear
+#exit
