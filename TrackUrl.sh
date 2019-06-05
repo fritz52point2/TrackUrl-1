@@ -1,11 +1,7 @@
 #!/bin/bash
 
 #64-bit
-#xterm -e ./ngrok_64 http 80 & clear
-
-#32-bit
-xterm -e ./ngrok http 80 & clear
-
+xterm -e ./ngrok_64 http 80 & clear
 
 echo "            ______________________________________________________
             7      77  _  77  _  77     77  7  77  7  77  _  77  7
@@ -19,7 +15,7 @@ read -p '           URL: ' varurl
 echo "<!DOCTYPE html>
 <html>
    <head>
-      <title>Z-HACKER</title>
+      <title>Lock-Lock</title>
       <style type=\"text/css\">
          body {
          background-image: url(\"skull.jpg\");
@@ -64,6 +60,6 @@ echo "         ______________________________________________________
            |  |  |  7  ||  |  ||     7|  7  ||  !  ||  7  ||     7
            !__!  !__!__!!__!__!!_____!!__!__!!_____!!__!__!!_____!
                                                                   " > /var/log/apache2/access.log
-xterm -e tail -f /var/log/apache2/access.log &
-clear
-exit
+#tail -f /var/log/apache2/access.log &
+#clear
+#exit
