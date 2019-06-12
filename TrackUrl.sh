@@ -1,10 +1,10 @@
 #!/bin/bash
 
 #64-bit
-#xterm -e ./ngrok_64 http 80 & clear
+xterm -e ./ngrok_64 http 80 & clear
 
 #32-bit
-xterm -e ./ngrok http 80 & clear
+#xterm -e ./ngrok http 80 & clear
 
 
 echo "            ______________________________________________________
